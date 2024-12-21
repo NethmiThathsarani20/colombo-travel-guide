@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact us</title>
+	<style type="text/css">
+
+        body{
+        	 padding:0 ;
+        	 margin:0 ;
+            }
+
+        a{
+          color: white;
+          padding: 25px 30px;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+          padding-bottom: 17px;
+         }
+         
+        .menu{
+              background-color: black;
+              opacity: 0.9;
+              width: 100%;
+              height: 5.5vh;
+              padding-top: 25px;
+             }
+
+        .li{
+            display: inline;
+           }
+
+
+        a:hover{
+                background-color: blue;
+                padding-bottom: 15px;
+                padding-top: 15px;
+                padding-right: 15px;
+                padding-left: 15px;
+                opacity: 0.9;
+                }
+
+        .active{
+                background-color: green;
+                padding-bottom: 15px;
+                padding-top: 15px;
+                padding-right: 15px;
+                padding-left: 15px;
+                opacity: 0.9;
+               }     
+
+
+		fieldset{
+			     background-color:lightgray;
+			     padding-top:20px;
+			     margin-top: 20px;
+			     margin-right: 5px;
+			     margin-bottom: 0;
+			     margin-left: 10px;
+			     padding-left: 10px;
+
+		        }
+
+		               
+
+        input{
+			  padding: 10px;
+		     }
+
+
+
+        footer{
+                 position: fixed;
+                 bottom: 0;
+                 background-color:orange;
+                 opacity: 0.9;
+                 width: 100%;
+                 text-align: center;
+                }                      
+
+        footer p{
+                  color: black;
+                  font-weight: bold;
+                 }
+		 
+		
+	</style>
+</head>
+<body>
+	<div>
+		<div class="nev">
+			<div class="menu">
+				<a href="Home_page.html">Home</a>
+				<a href="Top_destination_page.html">Top Destinations</a>
+				<a href="Visit_us_page.html">Visit Us</a>
+				<a class="active" href="Contact_us_page.html">Contact Us</a>
+			</div>
+		</div>
+	
+	<form>
+		<fieldset>
+		
+			<legend style="font-family: arial; font-size:25px ; color: darkgreen;" >Contact Us</legend>
+
+			<label for="fullname">Full name:</label>
+			<input type="text" id="FullName" size="170" maxlength="10" autofocus><br><br>
+
+			<label for="e-mail">E-mail Address:</label><br>
+			<input type="text" id="e-mail" size="170" maxlength="10" autofocus><br><br>
+
+			<label>District</label><br>
+			<input type="text" size="170" list="district">
+			<datalist id="district">
+				<option value="Colombo"></option>
+				<option value="Matara"></option>
+				<option value="Kegalle"></option>
+				<option value="Kilinochchi"></option>
+				<option value="Badulla"></option>
+				<option value="Gampaha"></option>
+				<option value="Kaluthara"></option>
+				<option value="Anuradhapura"></option>
+				<option value="Kandy"></option>
+				<option value="Hambantota"></option>
+				<option value="Galle"></option>
+				<option value="Kurunagala"></option>
+				<option value="Mannar"></option>
+				<option value="Matale"></option>
+				<option value="Monaragala"></option>
+				<option value="Dabulla"></option>
+				<option value="Nuwara Eliya"></option>
+				<option value="Polonnaruwa"></option>
+				<option value="Puttalam"></option>
+				<option value="Ratnapura"></option>
+				<option value="Trincomalee"></option>
+				<option value="Vavuniya"></option>
+				<option value="Ampara"></option>
+				<option value="Batticaloa"></option>
+				<option value="Jaffna"></option>
+			</datalist><br><br>
+
+			<label >Number of Members Traveling: </label><br>
+			<input type="number" id="members" ><br><br>
+			
+     		<label>Gender:</label><br><br>
+			   <input type="radio" name="sex" value="male">Male
+			   <input type="radio" name="sex" value="female">Female<br><br>
+
+			<label>Select the place you like to Visit:</label><br><br>
+			    <input type="checkbox" >Port City<br>
+			    <input type="checkbox" >Arcade Independence Square<br>
+			    <input type="checkbox" >Mount Lavinia Beach<br>
+                <input type="checkbox" >Dehiwala Zoo<br>
+			    <input type="checkbox" >Lotus Tower<br>
+			    <input type="checkbox" >Water Edge<br>
+ 		        <input type="checkbox" >Diyasaru Park<br>
+			    <input type="checkbox" >St.Mary's Church<br>
+			    <input type="checkbox" >Wateland Park<br><br>
+
+			<label>Where are you from?</label><br><br>
+			<select name="country">
+				<option selected value="srilanka">Sri Lanka</option>
+				<option>Sweden</option>
+				<option>Finaland</option>
+				<option>India</option>
+				<option>Russia</option>
+				<option>Chaina</option>
+				<option>Japan</option>
+				<option>United Kingdom</option>
+				<option>USA</option>
+				<option>Canada</option>
+
+			</select>
+
+			<br><br><label for="subject">Subject:</label><br><br>
+			<textarea name="message" rows="10" cols="170" >Enter your message..
+			</textarea><br><br>
+
+			<input type="submit" value="Submit" style="background-color:darkseagreen; font-size: 18px; font-weight:bold;border: none;">
+	
+		</fieldset><br>
+	</form>
+			<footer>
+				<p>&copy;2022 TravelSrilanka,All Right Reserved.</p>
+			</footer>
+		
+	
+</div>
+
+</body>
+</html>
